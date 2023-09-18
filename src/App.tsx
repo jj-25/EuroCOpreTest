@@ -1,11 +1,10 @@
-import React from "react";
-import RoomAllocation from "../components/RoomAllocation";
+import RoomAllocation from "../components/RoomAllocation/RoomAllocation";
+import { GUEST, ROOM } from "../common/constants";
 
 export default function App() {
-  const a = 31;
   return (
     <div>
-      <RoomAllocation />
+      <RoomAllocation guest={GUEST} room={ROOM} />
     </div>
   );
 }
